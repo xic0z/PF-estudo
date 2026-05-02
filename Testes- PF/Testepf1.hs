@@ -392,10 +392,10 @@ datas = do dia <- randomRIO (1,31) -- produza um valor entre 1-31
            ano <- randomRIO (2000,2025)
            return (dia,mes,ano)
 
-bingo :: IO ()
-bingo = do putStrLn "Começa!"
-           l <- valores []
-           putStrLn (show l)
+--bingo :: IO ()
+--bingo = do putStrLn "Começa!"
+          -- l <- valores []
+          -- putStrLn (show l)
 
 --valores :: [Int] -> I0 [Int] -- se esta lista n tiver o comprimento 90 ainda n acabou
 --valores l | length l == 90 = return
@@ -403,3 +403,4 @@ bingo = do putStrLn "Começa!"
        --                    putStrLn (show n)
         --                   if n 'elem' l then
           --                 else valores (n:l)
+
